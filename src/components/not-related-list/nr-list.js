@@ -6,6 +6,9 @@ const NotRelatedList =({nrTasks,onDelete})=>{
     let items
     //console.log(nrTasks)
     if(nrTasks!=null&&nrTasks!=undefined){
+        
+        nrTAsks.sort((a,b)=>a.date > b.date ? 1 : -1)
+        
         items = nrTasks.map((item)=>{
             return(
                 <NotRelatedItem key={item.id} text={item.text} tag={item.tag} onDelete={()=>onDelete(item.id)} date={item.date}/>

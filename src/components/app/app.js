@@ -84,9 +84,7 @@ class App extends Component{
     render(){
         
         let filtered=  this.state.nrTasks
-        if(filtered!=null && filtered!=undefined){
-            filtered.sort((a,b)=>a.date > b.date ? 1 : -1)
-        }
+        
         
         if(this.state.filterTag!=''){
            filtered=filtered.filter(item=>item.tag==this.state.filterTag)
