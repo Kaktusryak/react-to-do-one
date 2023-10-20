@@ -1,0 +1,59 @@
+.nr-form-div{
+    width: 60vw;
+    background-color: rgb(30, 30, 58);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    border-color: white;
+    border: 1px solid 
+}
+.nr-form-text{
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border:1px solid rgb(47, 95, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nr-form-tag{
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border:1px solid rgb(47, 95, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nr-form-date{
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border:1px solid rgb(47, 95, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    color: white;
+}
+
+.nr-submit{
+    margin-top: 10px;
+    width: 20%;
+    border-radius: 10px;
+    min-height: 30px;
+    max-height: 60px;
+    margin-top: 20px;
+    background-color: rgb(23, 148, 23);
+    color: white;
+    border: 1px solid white;
+
+}

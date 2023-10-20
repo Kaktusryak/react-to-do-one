@@ -1,0 +1,56 @@
+.nr-item{
+    width:60vw;
+    background-color: rgb(46, 46, 75);
+    list-style-type: none;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+
+
+}
+.nr-item-text{
+    width: 60%;
+    border-right: 1px solid white;
+    
+}
+.nr-item-delete{
+    width: 20%;
+    background-color: rgb(156, 1, 1);
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+}
+.nr-item-tag{
+    
+    color: rgb(224, 140, 29);
+    width: 60%;
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    border-right: 1px solid white;
+}
+
+.expired{
+    color: red;
+}
+.nr-item-date{
+    width: 40%;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.no-text{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
