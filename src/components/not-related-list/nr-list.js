@@ -7,7 +7,7 @@ const NotRelatedList =({nrTasks,onDelete})=>{
     //console.log(nrTasks)
     if(nrTasks!=null&&nrTasks!=undefined){
         
-        nrTAsks.sort((a,b)=>a.date > b.date ? 1 : -1)
+        nrTasks.sort((a,b)=>a.date > b.date ? 1 : -1)
         
         items = nrTasks.map((item)=>{
             return(
