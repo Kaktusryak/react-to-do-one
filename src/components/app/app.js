@@ -20,7 +20,7 @@ class App extends Component{
         
     }
     componentDidMount(){
-        localStorage.clear()
+        //localStorage.clear()
         const json = localStorage.getItem('nrTasks')
         const id = localStorage.getItem('maxId')
         const jsonTags = localStorage.getItem('tags')
