@@ -15,7 +15,7 @@ const NotRelatedList =({nrTasks,onDelete})=>{
             )
         })
     }else{
-        items = <li>Nothing</li>
+        items = <li className="nothing">Nothing</li>
     }
 
     
