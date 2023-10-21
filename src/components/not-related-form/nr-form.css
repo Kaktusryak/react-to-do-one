@@ -28,6 +28,8 @@
     border:1px solid rgb(47, 95, 255);
     padding-left: 10px;
     padding-right: 10px;
+}::after{
+    color: white;
 }
 .nr-form-date{
     margin-top: 10px;

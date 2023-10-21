@@ -16,29 +16,50 @@ class Filter extends Component{
         this.props.onFiltered(this.state.filterTag);
         e.preventDefault();
     }
-
+    clearFilter=(e)=>{
+        this.props.onFiltered('');
+        this.setState({filterTag:''})
+        e.preventDefault();
+    }
 
 
 
     render(){
-
+        let optionTags
+        let tags = this.props.tags
+        if(tags!==null&&tags!==undefined){
+            optionTags = tags.map((item)=>{
+                return(<option value={item} key={item}></option>)
+            })
+        }else{
+            optionTags= null
+        }
 
 
 
 
         return(
+
+            
             <div className="filter">
                 <form className="filter-form" onSubmit={this.onSubmit}>
                     <input type="text"
+                        list="tagsList"
                         className="nr-form-text"
                         placeholder="Tag"
                         name='nr-text'
                         value={this.state.filterTag}
                         onChange={this.onValueChange}>
                     </input>
+                    <datalist id="tagsList">
+                        {optionTags}
+                    </datalist>
                   
                     <button type="submit" className="filter-submit">
                         Filter
+                    </button>
+                    <button  className="filter-submit clear" onClick={this.clearFilter}>
+                        Clear
                     </button>
 
 

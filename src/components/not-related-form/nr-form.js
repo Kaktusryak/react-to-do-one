@@ -29,6 +29,18 @@ class NotRelatedForm extends Component{
     }
 
     render(){
+        let optionTags
+        let tags = this.props.tags
+        if(tags!==null&&tags!==undefined){
+            optionTags = tags.map((item)=>{
+                return(<option value={item} key={item}></option>)
+            })
+        }else{
+            optionTags= null
+        }
+
+
+
         return(
             <div className="nr-form-div">
                 <p>Add new task</p>
@@ -49,6 +61,7 @@ class NotRelatedForm extends Component{
                         onChange={this.onValueChange}
                     ></input>
                     <input type="text"
+                        list="tagsList"
                         className="nr-form-tag"
                         placeholder="Tag"
                         name='nrTag'
@@ -57,6 +70,9 @@ class NotRelatedForm extends Component{
                     >
                         
                     </input>
+                    <datalist id="tagsList">
+                        {optionTags}
+                    </datalist>
                     <button
                         type="submit"
                         className="nr-submit"

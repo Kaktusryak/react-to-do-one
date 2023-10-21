@@ -5,7 +5,7 @@ import './nr-list.css'
 const NotRelatedList =({nrTasks,onDelete})=>{
     let items
     //console.log(nrTasks)
-    if(nrTasks!=null&&nrTasks!=undefined){
+    if(nrTasks!==null&&nrTasks!==undefined){
         
         nrTasks.sort((a,b)=>a.date > b.date ? 1 : -1)
         
