@@ -3,6 +3,7 @@
     background-color: rgb(46, 46, 75);
     list-style-type: none;
     display: flex;
+    height: 50px;
     border: 1px solid white;
     border-radius: 15px;
     margin-bottom: 10px;

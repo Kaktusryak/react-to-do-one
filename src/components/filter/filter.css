@@ -12,10 +12,15 @@
 .filter-submit{
     width: 20%;
     border-radius: 10px;
-    height: 30px;
+    height: 40px;
     margin-top: 20px;
     background-color: rgb(224, 140, 29);
     color: white;
     border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
 
+}
+.clear{
+    background-color: brown;
 }

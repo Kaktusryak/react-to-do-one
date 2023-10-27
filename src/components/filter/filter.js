@@ -54,13 +54,13 @@ class Filter extends Component{
                     <datalist id="tagsList">
                         {optionTags}
                     </datalist>
-                  
-                    <button type="submit" className="filter-submit">
-                        Filter
-                    </button>
                     <button  className="filter-submit clear" onClick={this.clearFilter}>
                         Clear
                     </button>
+                    <button type="submit" className="filter-submit">
+                        Filter
+                    </button>
+                    
 
 
                 </form>
