@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './filter.css'
+import { GoArrowLeft } from "react-icons/go";
 
 class Filter extends Component{
     constructor(props){
@@ -54,8 +55,9 @@ class Filter extends Component{
                     <datalist id="tagsList">
                         {optionTags}
                     </datalist>
+                    <br/>
                     <button  className="filter-submit clear" onClick={this.clearFilter}>
-                        Clear
+                    <GoArrowLeft className="red"/>
                     </button>
                     <button type="submit" className="filter-submit">
                         Filter

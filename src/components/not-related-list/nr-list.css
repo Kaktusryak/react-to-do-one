@@ -1,7 +1,15 @@
 .nr-list{
     padding: 0;
-    width: 60vw;
+    width: 99vw;
+    padding-top: 10px;
+    
 }
+@media (min-width:700px){
+    .nr-list{
+        width: 700px !important;
+    }
+    
+  }
 .nothing{
     list-style: none;
 }

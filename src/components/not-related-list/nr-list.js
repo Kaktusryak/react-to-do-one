@@ -22,6 +22,7 @@ const NotRelatedList =({nrTasks,onDelete})=>{
 
     
     return(
+        
          <ul className="nr-list">
             {items}
         </ul>

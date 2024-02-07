@@ -1,20 +1,24 @@
 .filter-form{
-    background-color: rgb(30, 30, 58);
+    
     padding-top: 20px;
     padding-bottom: 40px;
-    border-radius: 30px;
-    border-color: white;
-    border: 1px solid;
+    border-bottom:1px solid;
     margin-top: 10px;
-    width: 60vw;
+    width: 99vw;
     
 }
+@media (min-width:700px){
+    .filter-form{
+        width: 700px !important;
+    }
+    
+  }
 .filter-submit{
     width: 20%;
     border-radius: 10px;
     height: 40px;
     margin-top: 20px;
-    background-color: rgb(224, 140, 29);
+    background-color: rgb(18, 18, 37);
     color: white;
     border: 1px solid white;
     margin-left: 10px;
@@ -22,5 +26,18 @@
 
 }
 .clear{
-    background-color: brown;
+    background-color: rgb(18, 18, 37);
+    width: 5%;
+    border-color: red;
+}
+.red{
+    color: red;
+    align-items: center;
+    
+    padding: 0;
+    margin:0;
+    border-color: red;
+    
+    
+    
 }

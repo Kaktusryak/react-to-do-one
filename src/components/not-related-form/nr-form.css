@@ -1,20 +1,28 @@
 .nr-form-div{
-    width: 60vw;
-    background-color: rgb(30, 30, 58);
+    width: 99vw;
+    
     padding-top: 20px;
     padding-bottom: 40px;
-    border-radius: 30px;
-    border-color: white;
-    border: 1px solid 
+    
+    border-bottom:1px solid;
+    
+    
+    
 }
+@media (min-width:700px){
+    .nr-form-div{
+        width: 700px !important;
+    }
+    
+  }
 .nr-form-text{
     margin-top: 10px;
     width: 80%;
     height: 30px;
     border-radius: 10px;
     color: white;
-    background-color: black;
-    border:1px solid rgb(47, 95, 255);
+    background-color: rgb(18, 18, 37);
+    border:1px solid white;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -24,8 +32,8 @@
     height: 30px;
     border-radius: 10px;
     color: white;
-    background-color: black;
-    border:1px solid rgb(47, 95, 255);
+    background-color: rgb(18, 18, 37);
+    border:1px solid white;
     padding-left: 10px;
     padding-right: 10px;
 }::after{
@@ -37,8 +45,8 @@
     height: 30px;
     border-radius: 10px;
     color: white;
-    background-color: black;
-    border:1px solid rgb(47, 95, 255);
+    background-color: rgb(18, 18, 37);
+    border:1px solid white;
     padding-left: 10px;
     padding-right: 10px;
     
@@ -53,7 +61,7 @@
     border-radius: 10px;
     height: 40px;
     margin-top: 20px;
-    background-color: rgb(23, 148, 23);
+    background-color: rgb(18, 18, 37);
     color: white;
     border: 1px solid white;
 

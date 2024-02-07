@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './nr-item.css'
+import { BsTrash } from "react-icons/bs";
 
 class NotRelatedItem extends Component{
     constructor(props){
@@ -37,14 +38,13 @@ class NotRelatedItem extends Component{
                     {pDate}
                 </div>
                 
-                <button 
+                
+                <BsTrash className="red" 
                     onClick={this.props.onDelete}
                     data-toggle="delete"
-                    type="button" 
-                    className="nr-item-delete">
-                Remove
+                    type="button" />
 
-                </button>
+                
             </li>
 
             
